@@ -1,0 +1,8 @@
+Debugger entered--Lisp error: (error "Canceled")
+  signal(error ("Canceled"))
+  error("Canceled")
+  basic-save-buffer(t)
+  save-buffer(1)
+  funcall-interactively(save-buffer 1)
+  call-interactively(save-buffer nil nil)
+  command-execute(save-buffer)
