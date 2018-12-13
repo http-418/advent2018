@@ -1,8 +1,16 @@
-Debugger entered--Lisp error: (error "Canceled")
-  signal(error ("Canceled"))
-  error("Canceled")
-  basic-save-buffer(t)
-  save-buffer(1)
-  funcall-interactively(save-buffer 1)
-  call-interactively(save-buffer nil nil)
-  command-execute(save-buffer)
+package advent2018
+
+import scala.io.Source
+
+object Exercise1 {
+  def main(args: Array[String]): Unit = {
+    val input_data =
+      Source.fromURL(getClass.getResource("/exercise1.input"))
+
+    val result = input_data.getLines
+      .map((xx) => xx.toInt)
+      .reduce((aa,bb) => aa + bb)
+
+    println(result)
+  }
+}
