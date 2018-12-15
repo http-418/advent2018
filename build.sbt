@@ -1,5 +1,7 @@
 import Dependencies._
 
+cancelable in Global := true
+
 lazy val root = (project in file(".")).
   settings(
     inThisBuild(List(
